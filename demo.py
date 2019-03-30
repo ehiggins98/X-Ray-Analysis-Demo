@@ -10,7 +10,7 @@ truth_file = 'truth.csv'
 
 model = Model().get_model()
 
-tf.logging.set_verbosity(tf.logging.DEBUG)
+tf.logging.set_verbosity(tf.logging.FATAL)
 
 demo_data = pd.read_csv(f'{data_dir}/{truth_file}')
 images = np.zeros((0, 400, 400, 3))
